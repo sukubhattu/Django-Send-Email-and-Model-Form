@@ -11,4 +11,4 @@ class Subscribe(forms.ModelForm):
 
     class Meta:
         model = Email
-        fields = ['personEmail']
+        fields = ['email']

@@ -2,7 +2,10 @@ from django.db import models
 
 # Create your models here.
 class Email(models.Model):
-    personEmail = models.EmailField()
+    email = models.EmailField()
+
+    class Meta:
+        unique_together = ["email"]
 
     def __str__(self):
-        return self.personEmail
+        return self.email
